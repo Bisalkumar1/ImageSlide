@@ -1,0 +1,18 @@
+$(document).ready(()=>{
+    $('.btn1').click(()=>{
+ $('.img1').css("marginLeft","0");
+    });
+    $('.btn2').click(()=>{
+ $('.img1').css("marginLeft","-21%");
+    });
+    $('.btn3').click(()=>{
+ $('.img1').css("marginLeft","-40%");
+    });
+    $('.btn4').click(()=>{
+ $('.img1').css("marginLeft","-62%");
+    });
+    $('a').click(function(){
+        $(this).addClass('active').siblings()
+        .removeClass('active');
+    })
+});

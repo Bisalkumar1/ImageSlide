@@ -1,0 +1,81 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aquamarine;
+}
+.centre{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;          
+    height: 350px;                   
+    box-shadow: 0 5px 8px black ;   
+    overflow:hidden;                 
+    background-color:burlywood;
+}
+
+/* this is specifically changes the size of individual due to original is not same as comp to all */
+ .img4{
+height: 300px;
+margin-right:40px;
+}
+.img1{
+height: 300px;
+margin-left:30px;
+}
+.img2{
+
+height: 300px;
+margin-left:40px;
+}
+.img3{
+height: 300px;
+margin-left:20px;
+
+}
+ 
+.images{
+  padding: 20px;
+    height: 100%;
+    width: 400%;
+    display: flex;
+} 
+
+.images img{
+    width: 100%;
+    height: 100%
+}
+.images .slide{
+    width: 20%;
+    transition: .6s;
+}
+.buttons{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.buttons a{
+ height: 8px;
+ width: 30px;
+ border: 2px solid white;
+ margin: 0 5px;
+ border-radius: 10px;
+}
+
+a.active{
+    transition: .5s;
+    transform: scale(0.999);
+    background:white;
+    animation: animate .4s;
+}
+@keyframes animate{
+    100%{
+        transform: scale(0.5);
+    }
+
+}
